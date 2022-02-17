@@ -28,7 +28,7 @@
                         <h1 class="text-center  py-2 text-primary">Income</h1>
                         <div class="d-flex ">
                             <h4>Income :</h4>
-                            <input type="income" class="mx-5">
+                            <input id="income-input" type="income" class="mx-5">
                         </div>
                         <h3 class="text-center py-2 text-primary ">Expenses</h3>
                         <div class="d-flex mt-2">
@@ -46,11 +46,11 @@
 
                             </div>
                             <div class="mx-5 ">
-                                <div><input type="food"></div>
-                                <div class="py-2"><input type="rent"></div>
-                                <div><input type="clothes"></div>
+                                <div><input id="food-expense" type="food"></div>
+                                <div class="py-2"><input id="rent-expense" type="rent"></div>
+                                <div><input id="cloth-expense" type="clothes"></div>
                             </div>
-                            <button class="btn btn-success font-weight-bold ">Calculate</button>
+                            <button id="calculate-btn" class="btn btn-success font-weight-bold ">Calculate</button>
 
                         </div>
                     </div>
@@ -69,10 +69,10 @@
             </div>
             <div class="mx-5">
                 <div>
-                    <h2>0</h2>
+                    <h2 id="total-expense">0</h2>
                 </div>
                 <div>
-                    <h2>0</h2>
+                    <h2 id="balance">0</h2>
                 </div>
             </div>
         </div>

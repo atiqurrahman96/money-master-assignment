@@ -3,10 +3,26 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     let totalIncome = parseFloat(incomeInput.value);
 
     const foodExpense = document.getElementById('food-expense').value;
+    if (foodExpense >= 0) {
+    }
+    else {
+        alert('Please , enter the positive number in Food Expenses ');
 
+    }
     const rentExpense = document.getElementById('rent-expense').value;
+    if (rentExpense >= 0) {
 
+    }
+    else {
+        alert('Please enter the positive number in Rent Expenses');
+    }
     const clothExpense = document.getElementById('cloth-expense').value;
+    if (clothExpense >= 0) {
+
+    }
+    else {
+        alert('Please enter the positive number in Cloth Expenses');
+    }
     const totalExpense = parseFloat(foodExpense) + parseFloat(rentExpense) + parseFloat(clothExpense);
     const expense = document.getElementById('total-expense');
     const allExpense = expense.innerText;
